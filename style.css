@@ -2,173 +2,220 @@
   margin: 0;
   padding: 0;
 }
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
+  /* color: #333; */
+  color:#5E5873;
   background-color: #f4f4f4;
 }
-p{
-    color:#95939f;
-    line-height: 1.5rem;
-    margin-bottom: 5px;
-    font-size: 16.5px;
+p {
+  color: #95939f;
+  line-height: 1.5rem;
+  margin-bottom: 5px;
+  font-size: 16.5px;
 }
-ul,li{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.container_main{
-    width: 100%;
-    position: relative;
-    display: flex;
+.container_main {
+  width: 100%;
+  position: relative;
+  display: flex;
 }
-.content{
-    width: 100%;
+.content {
+  width: 100%;
 }
-.left_fixed_menu{
-    width: 260px;
-    position: relative;
-    height: 100vh;
-    display: inline-block;
+.left_fixed_menu {
+  width: 260px;
+  position: relative;
+  height: 100vh;
+  display: inline-block;
 }
-.left_menu{
-    position: fixed;
-    width: 225px;
-    height: 100%;
-    background-color: #fff;
-    padding: 10px 20px;
-    overflow-y: scroll;
+.left_menu {
+  position: fixed;
+  width: 225px;
+  height: 100%;
+  background-color: #fff;
+  padding: 10px 20px;
+  overflow-y: scroll;
 }
 .left_menu .logo {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
-.left_menu .logo img{
-    width: 80%;
-    margin-right: 10px;
+.left_menu .logo img {
+  width: 80%;
+  margin-right: 10px;
 }
-.left_menu .logo i{
-    font-size: 20px;
-    color:#7c7988;
+.left_menu .logo i {
+  font-size: 20px;
+  color: #7c7988;
 }
-.left_menu ul li a{
-    font-weight: 400;
-    border-radius: 4px;
-    width: 100%;
-    display: block;
-    text-decoration: none;
-    padding: 10px;
-    margin-bottom: 5px;
-    color:#625f6e;
-    font-size: 17px;
-    transition: transform 0.25s ease;
+.left_menu ul li a {
+  font-weight: 400;
+  border-radius: 4px;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: #625f6e;
+  font-size: 17px;
+  transition: transform 0.25s ease;
 }
-.left_menu ul li a.active{
-    background: linear-gradient(
-118deg
-, #7367f0, rgba(115, 103, 240, 0.7));
-    box-shadow: 0 0 10px 1px rgb(115 103 240 / 70%);
-    color: #fff;
+.left_menu ul li a.active {
+  background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7));
+  box-shadow: 0 0 10px 1px rgb(115 103 240 / 70%);
+  color: #fff;
 }
 
-.left_menu ul li a:hover{
-    transform: translateX(5px);
+.left_menu ul li a:hover {
+  transform: translateX(5px);
 }
 
-.top_menu .d-flex{
-    width: 100%;
+.top_menu .d-flex {
+  width: 100%;
 }
 .top_menu {
-    padding: 20px 30px;
-    background: #fff;
-    box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
-    margin: 1.3rem  20px;
-    border-radius: 0.428rem;
-    z-index: 12;
-    /* position: fixed;
+  padding: 20px 30px;
+  background: #fff;
+  box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+  margin: 1.3rem 20px;
+  border-radius: 0.428rem;
+  z-index: 12;
+  /* position: fixed;
     width: 100%; */
 }
-.login_reg a{
-    margin: 0 10px;
-    text-decoration: none;
-    color: #625f6e;
-    font-weight: 500;
-    font-size: 17px;
+.login_reg a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #625f6e;
+  font-weight: 500;
+  font-size: 17px;
 }
-.bookmark i{
-    font-size: 17px;
-    cursor: pointer;
-    transition: .3s;
-    margin:0 5px;
+.bookmark i {
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 5px;
 }
-.bookmark i:hover{
-    color: #ffab5a;
-}
-
-.main_body{
-    padding: 20px 30px;
-}
-.main_body::-webkit-scrollbar{
-    display: none;
-}
-.main_body a{
-    text-decoration: none;
-    color: #625f6e;
-}
-.single_box{
-    padding: 10px;
-    min-width: 0;
-    background-color: #FFF;
-    background-clip: border-box;
-    border: 0 solid rgba(34,41,47,.125);
-    border-radius: 0.428rem;
-    text-align: center;
+.bookmark i:hover {
+  color: #ffab5a;
 }
 
-.single_box h3{
-    font-size: 20px;
-    font-weight: 500;
-    margin: 10px 0;
+.main_body {
+  padding: 20px 30px;
+}
+.main_body::-webkit-scrollbar {
+  display: none;
+}
+.main_body a {
+  text-decoration: none;
+  color: #625f6e;
+}
+.single_box {
+  padding: 10px;
+  min-width: 0;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(34, 41, 47, 0.125);
+  border-radius: 0.428rem;
+  text-align: center;
 }
 
-.desc h3{
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #5E5873;
-}
-p span{
-    color:#897ff2;
-}
-p span.active{
-    color: #5cda94;
+.single_box h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0;
 }
 
+.desc h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #5e5873;
+}
+p span {
+  color: #897ff2;
+}
+p span.active {
+  color: #5cda94;
+}
 
+.read_more_container {
+  position: fixed;
+  bottom: 0;
+  right: -360px;
+  width: 350px;
+  max-width: 350px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+  transition: 0.5s;
+}
+.read_more_container.active {
+  right: 0;
+}
 
+.read_more_container .title,
+.footer_element p {
+  border-bottom: 1px solid #d6d6d6;
+}
 
+.read_more_container .title h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #5e5873;
+}
+.read_more_container .title i.fa-times {
+  font-size: 20px;
+  cursor: pointer;
+}
+#post_title {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+#post_ref {
+  color: #b9b9c3 !important;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
 
+#post_desc {
+  margin-bottom: 30px;
+}
 
+.footer_element p {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.left_menu::-webkit-scrollbar{width:10px}
-.left_menu::-webkit-scrollbar-thumb{background:#7367f0;border-radius:5px}
+.footer_element div span {
+  margin: 5px;
+  background-image: linear-gradient(47deg, #4839eb, #7367f0);
+  background-repeat: repeat;
+  color: #fff;
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+.left_menu::-webkit-scrollbar {
+  width: 10px;
+}
+.left_menu::-webkit-scrollbar-thumb {
+  background: #7367f0;
+  border-radius: 5px;
+}
