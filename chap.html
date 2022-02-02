@@ -15,11 +15,12 @@
   </head>
   <body>
     <div id="main_container" class="container_main">
-      <div class="left_fixed_menu">
+      <div id="left_side" class="left_fixed_menu">
         <div class="left_menu">
           <div class="logo d-flex">
-            <img src="images/logo.png" alt="" />
-            <i onclick="leftMenuToggle()" class="fas fa-dot-circle cursor_pointer"></i>
+            <a href="/"><img src="images/logo.png" alt="" /></a>
+            <i onclick="leftMenuToggle()" class="fas fa-dot-circle cursor_pointer mx-1"></i>
+            <i onclick="toggle('left_side',false)" class="fas fa-times cursor_pointer"></i>
           </div>
           <ul id="left_menu_toggle">
             <li>
@@ -38,6 +39,7 @@
           <input placeholder="Search Here" type="text" id="search_bar" class="search_bar">
           <div id="search_option" class="d-flex justify-content-between align-items-center">
             <div class="bookmark">
+                <i onclick="toggle('left_side',false)" class="fas fa-bars"></i>
               <i onclick="toggle('search_bar', true)" class="fas fa-search"></i>
             </div>
             <div class="login_reg">
