@@ -38,6 +38,7 @@ li {
   position: relative;
   height: 100vh;
   display: inline-block;
+  transition: all 0.3s ease-in-out;
 }
 .left_menu {
   position: fixed;
@@ -46,6 +47,7 @@ li {
   background-color: #fff;
   padding: 10px 20px;
   overflow-y: scroll;
+  transition: all 0.3s ease-in-out;
 }
 .left_menu .logo {
   margin-bottom: 30px;
@@ -218,4 +220,31 @@ p span.active {
 .left_menu::-webkit-scrollbar-thumb {
   background: #7367f0;
   border-radius: 5px;
+}
+.left_menu_toggle span.toggle{
+  display:none;
+}
+
+.main_container_toggle .left_fixed_menu, .main_container_toggle .left_menu {
+  width: 89px;
+}
+.search_bar{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 5px;
+  width: 100%;
+  color:#5E5873;
+  display:none;
+}
+.search_bar.active{
+  display:block;
+}
+@media (max-width:1024px) {
+  .left_fixed_menu,.left_menu {
+    width: 89px;
+  }
+  .left_menu span.toggle{
+    display:none;
+  }
 }
