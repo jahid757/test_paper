@@ -13,19 +13,21 @@
     <title>Test Paper</title>
   </head>
   <body>
-    <div class="container_main">
+    <div id="main_container"  class="container_main">
       <div class="left_fixed_menu">
         <div class="left_menu">
           <div class="logo d-flex">
             <img src="images/logo.png" alt="" />
-            <i class="fas fa-dot-circle"></i>
+            <i onclick="leftMenuToggle()" class="fas fa-dot-circle cursor_pointer"></i>
           </div>
-          <ul>
+          <ul id="left_menu_toggle">
             <li>
-              <a class="active" href="#"> <i class="fas fa-home"></i> SSC</a>
+              <a class="active" href="#">
+                <i class="fas fa-home"></i> <span class="toggle">Test Chapter</span></a
+              >
             </li>
             <li>
-              <a href="#"> <i class="fas fa-home"></i> HSC</a>
+              <a href="#"> <i class="fas fa-home"></i> <span class="toggle">Test Chapter</span></a>
             </li>
           </ul>
         </div>
@@ -46,8 +48,9 @@
 
         <div class="main_body">
           <div class="row">
+            
             <div class="col-sm-4 col-md-2 mb-3">
-              <a href="chapter.html">
+              <a href="chap.html">
                 <div class="single_box">
                   <img src="./images/book.png" alt="" />
                   <h3>Bangla</h3>
@@ -56,16 +59,90 @@
             </div>
 
             <div class="col-sm-4 col-md-2 mb-3">
-              <a href="chapter.html">
+              <a href="chap.html">
                 <div class="single_box">
                   <img src="./images/book.png" alt="" />
                   <h3>English</h3>
                 </div>
               </a>
             </div>
+
+            <div class="col-sm-4 col-md-2 mb-3">
+              <a href="chap.html">
+                <div class="single_box">
+                  <img src="./images/book.png" alt="" />
+                  <h3>Bangla</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-4 col-md-2 mb-3">
+              <a href="chap.html">
+                <div class="single_box">
+                  <img src="./images/book.png" alt="" />
+                  <h3>English</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-4 col-md-2 mb-3">
+              <a href="chap.html">
+                <div class="single_box">
+                  <img src="./images/book.png" alt="" />
+                  <h3>Bangla</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-4 col-md-2 mb-3">
+              <a href="chap.html">
+                <div class="single_box">
+                  <img src="./images/book.png" alt="" />
+                  <h3>English</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-4 col-md-2 mb-3">
+              <a href="chap.html">
+                <div class="single_box">
+                  <img src="./images/book.png" alt="" />
+                  <h3>Bangla</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-4 col-md-2 mb-3">
+              <a href="chap.html">
+                <div class="single_box">
+                  <img src="./images/book.png" alt="" />
+                  <h3>English</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-4 col-md-2 mb-3">
+              <a href="chap.html">
+                <div class="single_box">
+                  <img src="./images/book.png" alt="" />
+                  <h3>Bangla</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-4 col-md-2 mb-3">
+              <a href="chap.html">
+                <div class="single_box">
+                  <img src="./images/book.png" alt="" />
+                  <h3>English</h3>
+                </div>
+              </a>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
