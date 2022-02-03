@@ -14,13 +14,13 @@
     <title>Test Paper</title>
   </head>
   <body>
-    <div id="main_container" class="container_main">
+    <div id="main_container"  class="container_main">
       <div id="left_side" class="left_fixed_menu">
         <div class="left_menu">
           <div class="logo d-flex">
             <a href="/"><img src="images/logo.png" alt="" /></a>
             <i onclick="leftMenuToggle()" class="fas fa-dot-circle cursor_pointer mx-1"></i>
-            <i onclick="toggle('left_side',false)" class="fas fa-times cursor_pointer"></i>
+            <i onclick="toggle('left_side',true,'main_container')" class="fas fa-times cursor_pointer"></i>
           </div>
           <ul id="left_menu_toggle">
             <li>
@@ -36,13 +36,17 @@
       </div>
       <div class="content">
         <div class="top_menu">
-          <input placeholder="Search Here" type="text" id="search_bar" class="search_bar">
+          <div id="search_bar"  class="d-flex align-items-center">
+            <input placeholder="Search Here" type="text"class="search_bar">
+          <i onclick="toggle('search_bar',true,'search_option')" class="fas fa-times cursor_pointer"></i>
+          <input type="submit" value="Search">
+          </div>
           <div id="search_option" class="d-flex justify-content-between align-items-center">
-            <div class="bookmark">
-                <i onclick="toggle('left_side',false)" class="fas fa-bars"></i>
-              <i onclick="toggle('search_bar', true)" class="fas fa-search"></i>
+            <div class="bookmark d-flex">
+                <i onclick="toggle('left_side',true,'main_container')" class="fas fa-bars" id="menuIcon"></i>
+              <i onclick="toggle('search_bar', true,'search_option')" class="fas fa-search"></i>
             </div>
-            <div class="login_reg">
+            <div class="login_reg d-flex align-items-center justify-content-end">
               <i class="far fa-star"></i>
               <a href="#">Login</a>
               <a href="#">Register</a>
@@ -68,7 +72,7 @@
                   class="box_footer d-flex justify-content-between align-items-center"
                 >
                   <p>গুরত্তপূর্ণ: <span class="active">2</span></p>
-                  <img src="./images/Unlike.png" alt="">
+                  <i id="link1" onclick="toggle('link1')" class="fas fa-thumbs-up"></i>
                 </div>
               </div>
             </div>
@@ -89,7 +93,7 @@
                   class="box_footer d-flex justify-content-between align-items-center"
                 >
                   <p>গুরত্তপূর্ণ: <span class="active">2</span></p>
-                  <img src="./images/Like.png" alt="">
+                  <i id="link2" onclick="toggle('link2')" class="fas fa-thumbs-up"></i>
                 </div>
               </div>
             </div>
@@ -110,7 +114,7 @@
                   class="box_footer d-flex justify-content-between align-items-center"
                 >
                   <p>গুরত্তপূর্ণ: <span class="active">2</span></p>
-                  <img src="./images/Unlike.png" alt="">
+                  <i id="link3" onclick="toggle('link3')" class="fas active fa-thumbs-up"></i>
                 </div>
               </div>
             </div>
@@ -131,7 +135,7 @@
                   class="box_footer d-flex justify-content-between align-items-center"
                 >
                   <p>গুরত্তপূর্ণ: <span class="active">2</span></p>
-                  <img src="./images/Unlike.png" alt="">
+                  <i id="link4" onclick="toggle('link4')" class="fas fa-thumbs-up active"></i>
                 </div>
               </div>
             </div>
@@ -152,7 +156,7 @@
                   class="box_footer d-flex justify-content-between align-items-center"
                 >
                   <p>গুরত্তপূর্ণ: <span class="active">2</span></p>
-                  <img src="./images/Like.png" alt="">
+                  <i id="link5" onclick="toggle('link5')" class="fas fa-thumbs-up"></i>
                 </div>
               </div>
             </div>
@@ -173,7 +177,7 @@
                   class="box_footer d-flex justify-content-between align-items-center"
                 >
                   <p>গুরত্তপূর্ণ: <span class="active">2</span></p>
-                  <img src="./images/Unlike.png" alt="">
+                  <i id="link6" onclick="toggle('link6')" class="fas fa-thumbs-up active"></i>
                 </div>
               </div>
             </div>
@@ -194,7 +198,7 @@
                   class="box_footer d-flex justify-content-between align-items-center"
                 >
                   <p>গুরত্তপূর্ণ: <span class="active">2</span></p>
-                  <img src="./images/Like.png" alt="">
+                  <i id="link7" onclick="toggle('link7')" class="fas fa-thumbs-up"></i>
                 </div>
               </div>
             </div>
@@ -214,6 +218,7 @@
         <div class="dynamic_content p-3">
           <h4 id="post_title">Test Post 01</h4>
           <p id="post_ref">Test - Department - 1 > Bangla > Test Chapter</p>
+          <img class="my-2" src="./images/post.jpg" alt="">
           <p id="post_desc">
             Nothing to say here sefsdfgsdf sdf sdfgdfgd fg Yeah you are sure..
           </p>
