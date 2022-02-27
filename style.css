@@ -379,7 +379,7 @@ input[type="submit"] {
 .login_container {
   background: #fff;
 }
-.login_container input.login_input,.login_container button {
+.login_container input.login_input,.login_container button,select {
   padding: 10px;
   width: 100%;
   display: block;
