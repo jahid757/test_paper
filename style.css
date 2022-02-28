@@ -283,7 +283,7 @@ p span.active {
   display: none;
 }
 .single_box img {
-  width: 25px;
+  width: 65px;
 }
 @media (min-width: 576px) {
   .fa-bars/*,.logo .fa-times*/ {
@@ -409,4 +409,24 @@ input[type="submit"] {
 .login_container a{
   text-decoration: none;
   color:#7367f0
+}
+
+
+/* mobile view custom responsive */
+
+@media (max-width:570px){
+  .col-sm-4{
+    width:33%;
+  }
+  .mobile_footer{
+    display: block !important;
+    background:#fff;
+    padding:8px 0;
+    position: fixed;
+    bottom:0;
+    width:100%;
+  }
+  .mobile_footer i{
+    font-size: 20px;
+  }
 }
