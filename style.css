@@ -410,7 +410,17 @@ input[type="submit"] {
   text-decoration: none;
   color:#7367f0
 }
-
+.profile_img img{
+  max-width: 200px;
+}
+.profile button{
+  color: #fff;
+  background-color: #6258cc;
+  border: none;
+  transition: .3s;
+  outline: none;
+  border-radius: 5px;
+}
 
 /* mobile view custom responsive */
 
@@ -429,4 +439,8 @@ input[type="submit"] {
   .mobile_footer i{
     font-size: 20px;
   }
+  .profile_img img{
+    max-width: 100px;
+  }
+  
 }
