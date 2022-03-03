@@ -454,6 +454,14 @@ input[type="submit"] {
 /* mobile view custom responsive */
 
 @media (max-width:570px){
+  .change_profile_info p{
+    max-width: 100%;
+    width: 100%;
+  }
+  .info_input{
+    width: 100%;
+    max-width: 100%;
+  }
   .col-sm-4{
     width:33%;
   }
