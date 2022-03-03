@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./images/ICON.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"crossorigin="anonymous"></script>
     <title>Test Paper</title>
   </head>
   <body>
@@ -88,7 +89,14 @@
                 </div>
             </div>
             <div class="change_profile_info">
-                <button class="px-3 py-2">Change Info</button>
+                <p id="changeInfo" class="d-flex align-items-center justify-content-between mb-2 pointer"><span>Change Info</span> <i class="fa fa-arrow-right"></i></p>
+                <div id="changeInfoInput" class="info_input">
+                  <input type="text" placeholder="Enter Name">
+                  <select name="" id="">
+                    <option value="elevenTwelve">Eleven - Twelve</option>
+                    <option value="Ten">Ten</option>
+                  </select>
+                </div>
             </div>
         </div>
         

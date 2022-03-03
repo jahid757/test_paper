@@ -30,3 +30,9 @@ function popUpLoginToggle(id,id2,id3,id4){
   id_2.classList.remove("active");
   id_4.classList.remove("d-none");
 }
+
+$(document).ready(function(){
+  $("#changeInfo").click(function(){
+    $("#changeInfoInput").slideToggle();
+  })
+})

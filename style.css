@@ -11,11 +11,11 @@ body {
   line-height: 1.42857143;
   /* color: #333; */
   color: #5e5873;
-  background-color: #f4f4f4;
+  background-color: #d8d8d8;
   overflow-x: hidden;
 }
 p {
-  color: #95939f;
+  color: #545454;
   line-height: 1.5rem;
   margin-bottom: 5px;
   font-size: 16.5px;
@@ -421,7 +421,36 @@ input[type="submit"] {
   outline: none;
   border-radius: 5px;
 }
-
+.change_profile_info p{
+  max-width: 300px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.info_input{
+  max-width: 300px;
+}
+.info_input input, .info_input select{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #d8d6de;
+  appearance: none;
+  border-radius: 0.357rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-bottom: 10px;
+  outline: none;
+}
+#changeInfoInput{
+  display:none;
+}
+.pointer{
+  cursor: pointer;
+}
 /* mobile view custom responsive */
 
 @media (max-width:570px){
