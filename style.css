@@ -169,6 +169,7 @@ p span.active {
 .read_more_container.active {
   width: 350px;
   max-width: 350px;
+  top: 0;
 }
 
 .read_more_container .title,
