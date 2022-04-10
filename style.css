@@ -490,4 +490,5 @@ input[type="submit"] {
 }
 .custom_width{
   max-width:400px;width:400px;
+  padding:15px 0;
 }
