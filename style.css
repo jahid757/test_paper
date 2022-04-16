@@ -20,6 +20,10 @@ p {
   margin-bottom: 5px;
   font-size: 16.5px;
 }
+a,a:hover{
+  color: #5e5873;
+  text-decoration: none;
+}
 ul,
 li {
   list-style: none;
@@ -210,10 +214,13 @@ p span.active {
 }
 
 .footer_element div span {
-  padding: 5px;
+  padding: 5px 10px;
   margin: 5px;
   border-radius: 20px;
   border: 1px solid #d6d6d6;
+  background-color:#1a6bc9;
+  color: #ffffff;
+  cursor: pointer;
 }
 .cursor_pointer {
   cursor: pointer;
@@ -481,7 +488,11 @@ input[type="submit"] {
     max-width: 100px;
   }
   
+  
 }
+.d-sm-none-cs{
+    color:#625f6e;
+  }
 @media (max-width:450px){
   .custom_width{
     width: 100% !important;
